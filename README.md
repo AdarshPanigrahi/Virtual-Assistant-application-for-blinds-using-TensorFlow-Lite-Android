@@ -2,8 +2,8 @@
 
 ## Virtual Assistant for guiding visually challenged people. 
 
+<img src="Screenshots/cp.jpeg " width=700>
 
-![Logo](logo.png)
 
 
 
@@ -38,10 +38,10 @@ for your system. We are currently on JDK 8.
 
 ## Features
 
-- Object Detection with warning
+- Object Detection with Warning
 - Voice assistant
 - Navigation using map
-- Alarm system for emergency
+- Emergency Helpline
 
 
 ## Future Scope
@@ -49,6 +49,7 @@ for your system. We are currently on JDK 8.
 - Biometric authentication
 - Distance detection using noise
 - Audio and Gesture recognition   
+- Speech to Text features
 
 ## Feedback
 
@@ -59,9 +60,9 @@ If you have any feedback, please reach out to us at advayaggarwal0301@gmail.com
 
 **Client:** XML
 
-**Tools:** Android Studio
+**Tools:** Android Studio , Tensorflow Lite
 
-**Server:** Tensorflow Lite, Java
+**Server:** Java
 
 ## Authors
 
