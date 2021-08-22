@@ -11,7 +11,7 @@
 
 
 ## Screenshots
-<img src="Screenshots/splashscreen.png " width=200> <img src="Screenshots/loginpage.png " width=200> <img src="Screenshots/dashboard.png" width=200>   <img src="Screenshots/accelerometer.png" width=200> <img src="Screenshots/alarmpage.png " width=200> <img src="Screenshots/detection.png " width=200> <img src="Screenshots/emergency.png" width=200>   <img src="Screenshots/scan.png" width=200>
+<img src="Screenshots/splashscreen.jpg " width=200> <img src="Screenshots/loginpage.jpg " width=200> <img src="Screenshots/dashboard.jpg" width=200>   <img src="Screenshots/accelerometer.jpg" width=200> <img src="Screenshots/alarmpage.jpg " width=200> <img src="Screenshots/detection.jpg " width=200> <img src="Screenshots/emergency.jpg" width=200>   <img src="Screenshots/scan.jpg" width=200>
 
 ## Demo
 [Video](https://drive.google.com/file/d/1KhbZ9nU5-TDA17Aq5kfO_y3K8eF6Xab6/view?usp=sharing)
