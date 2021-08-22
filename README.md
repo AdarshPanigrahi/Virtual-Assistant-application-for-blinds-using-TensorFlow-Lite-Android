@@ -16,6 +16,7 @@
 ## Demo
 [Video](https://drive.google.com/file/d/1KhbZ9nU5-TDA17Aq5kfO_y3K8eF6Xab6/view?usp=sharing)
 
+[Presentation](https://docs.google.com/presentation/d/1CTsDPrOoCK5YRZwfy5rA3TETnBaQjJDB/edit?usp=sharing&ouid=110691476417659853731&rtpof=true&sd=true)
 
 ## Getting Started
 
