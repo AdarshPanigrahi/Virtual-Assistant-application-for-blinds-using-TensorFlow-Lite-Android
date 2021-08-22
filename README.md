@@ -11,7 +11,7 @@
 
 
 ## Screenshots
-![App Screenshot](ss2.jpg)$~~~~~~~~~~~$ $~~~~~~~~~~~$![App Screenshot](ss3.jpg)
+![App Screenshot](ss2.jpg) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![App Screenshot](ss3.jpg)
 
 ## Demo
 [Video](https://drive.google.com/file/d/1KhbZ9nU5-TDA17Aq5kfO_y3K8eF6Xab6/view?usp=sharing)
