@@ -2,7 +2,7 @@
 
 ## Virtual Assistant for guiding visually challenged people. 
 
-<img src="Screenshots/cp.jpeg " width=700>
+![Logo](logo.png)
 
 
 
