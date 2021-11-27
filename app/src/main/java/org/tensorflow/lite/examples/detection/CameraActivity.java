@@ -115,7 +115,6 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
 
   private Detector detector;
 
-  //Data Binding
   private TfeOdActivityCameraBinding binding;
 
   private long timestamp = 0;
