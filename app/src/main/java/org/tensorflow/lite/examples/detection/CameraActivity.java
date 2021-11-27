@@ -97,6 +97,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
     TF_OD_API;
   }
 
+
   private static final int TF_OD_API_INPUT_SIZE = 300;
   private static final boolean TF_OD_API_IS_QUANTIZED = true;
   private static final String TF_OD_API_MODEL_FILE = "detect.tflite";
