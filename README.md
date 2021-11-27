@@ -1,139 +1,81 @@
-# TensorFlow Lite Object Detection Android Demo
+# **Virtual Assist**
 
-![Android Logo](../assets/android.jpg)
+## Virtual Assistant for guiding visually challenged people. 
 
-### Overview
+![Logo](logo.png)
 
-This is a camera app that continuously detects the objects (bounding boxes and
-classes) in the frames seen by your device's back camera, using a quantized
-[MobileNet SSD](https://github.com/tensorflow/models/tree/master/research/object_detection)
-model trained on the [COCO dataset](http://cocodataset.org/). These instructions
-walk you through building and running the demo on an Android device.
 
-The model files are downloaded via Gradle scripts when you build and run. You
-don't need to do any steps to download TFLite models into the project
-explicitly.
 
-Application can run either on device or emulator.
 
-<!-- TODO(b/124116863): Add app screenshot. -->
 
-## Build the demo using Android Studio
 
-### Prerequisites
 
-*   If you don't have already, install
-    **[Android Studio](https://developer.android.com/studio/index.html)**,
-    following the instructions on the website.
+## Screenshots
+<img src="Screenshots/splashscreen.jpg " width=200> <img src="Screenshots/loginpage.jpg " width=200> <img src="Screenshots/dashboard.jpg" width=200>   <img src="Screenshots/accelerometer.jpg" width=200> <img src="Screenshots/alarmpage.jpg " width=200> <img src="Screenshots/detection.jpg " width=200> <img src="Screenshots/emergency.jpg" width=200>   <img src="Screenshots/scan.jpg" width=200>
 
-*   You need an Android device and Android development environment with minimum
-    API 21.
+## Demo
+[Video](https://drive.google.com/file/d/1KhbZ9nU5-TDA17Aq5kfO_y3K8eF6Xab6/view?usp=sharing)
 
-*   Android Studio 3.2 or later.
+[Presentation](https://docs.google.com/presentation/d/1CTsDPrOoCK5YRZwfy5rA3TETnBaQjJDB/edit?usp=sharing&ouid=110691476417659853731&rtpof=true&sd=true)
 
-### Building
+## Getting Started
 
-*   Open Android Studio, and from the Welcome screen, select Open an existing
-    Android Studio project.
+_Follow these instructions to build and run the project._
 
-*   From the Open File or Project window that appears, navigate to and select
-    the tensorflow-lite/examples/object_detection/android directory from
-    wherever you cloned the TensorFlow Lite sample GitHub repo. Click OK.
+1. Clone this repository.
+```bash
+  git clone https://github.com/infyhwi2021/Team13/tree/master
+```
+2. Download the appropriate [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+for your system. We are currently on JDK 8.
+3. [Install Android Studio](https://developer.android.com/sdk/index.html).
+4. Import the project. Open Android Studio, click `Open an existing Android
+   Studio project` and select the project. Gradle will build the project.
+5. Run the app. Click `Run > Run 'app'`. After the project builds you'll be
+   prompted to build or launch an emulator.
 
-*   If it asks you to do a Gradle Sync, click OK.
 
-*   You may also need to install various platforms and tools, if you get errors
-    like "Failed to find target with hash string 'android-21'" and similar.
-    Click the `Run` button (the green arrow) or select `Run > Run 'android'`
-    from the top menu. You may need to rebuild the project using `Build >
-    Rebuild` Project.
 
-*   If it asks you to use Instant Run, click Proceed Without Instant Run.
+## Features
 
-*   Also, you need to have an Android device plugged in with developer options
-    enabled at this point. See
-    **[here](https://developer.android.com/studio/run/device)** for more details
-    on setting up developer devices.
+- Object Detection with Warning
+- Voice assistant
+- Navigation using map
+- Emergency Helpline
 
-#### Switch between inference solutions (Task library vs TFLite Interpreter)
 
-This object detection Android reference app demonstrates two implementation
-solutions:
+## Future Scope
 
-(1)
-[`lib_task_api`](https://github.com/tensorflow/examples/tree/master/lite/examples/nl_classification/android/lib_task_api)
-that leverages the out-of-box API from the
-[TensorFlow Lite Task Library](https://www.tensorflow.org/lite/inference_with_metadata/task_library/object_detector);
+- Biometric authentication
+- Distance detection using noise
+- Audio and Gesture recognition   
+- Speech to Text features
 
-(2)
-[`lib_interpreter`](https://github.com/tensorflow/examples/tree/master/lite/examples/text_classification/android/lib_interpreter)
-that creates the custom inference pipleline using the
-[TensorFlow Lite Interpreter Java API](https://www.tensorflow.org/lite/guide/inference#load_and_run_a_model_in_java).
+## Feedback
 
-The [`build.gradle`](app/build.gradle) inside `app` folder shows how to change
-`flavorDimensions "tfliteInference"` to switch between the two solutions.
+If you have any feedback, please reach out to us at advayaggarwal0301@gmail.com
 
-Inside **Android Studio**, you can change the build variant to whichever one you
-want to build and run—just go to `Build > Select Build Variant` and select one
-from the drop-down menu. See
-[configure product flavors in Android Studio](https://developer.android.com/studio/build/build-variants#product-flavors)
-for more details.
 
-For gradle CLI, running `./gradlew build` can create APKs for both solutions
-under `app/build/outputs/apk`.
+## Tech Stack
 
-*Note: If you simply want the out-of-box API to run the app, we recommend
-`lib_task_api` for inference. If you want to customize your own models and
-control the detail of inputs and outputs, it might be easier to adapt your model
-inputs and outputs by using `lib_interpreter`.*
+**Client:** XML
 
-### Model used
+**Tools:** Android Studio , Tensorflow Lite
 
-Downloading, extraction and placing it in assets folder has been managed
-automatically by download.gradle.
+**Server:** Java
 
-If you explicitly want to download the model, you can download from
-**[here](http://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip)**.
-Extract the zip to get the .tflite and label file.
+## Authors
 
-### Custom model used
+- [@AdarshPanigrahi](https://www.github.com/AdarshPanigrahi)
+- [@advayaggarwal](https://www.github.com/advayaggarwal)
+- [@ritikrai](https://www.github.com/ritikrai)
+- [@ujjwal-ab](https://www.github.com/ujjwal-ab)
 
-This example shows you how to perform TensorFlow Lite object detection using a
-custom model. * Clone the TensorFlow models GitHub repository to your computer.
-`git clone https://github.com/tensorflow/models/` * Build and install this
-repository. `cd models/research python3 setup.py build && python3 setup.py
-install` * Download the MobileNet SSD trained on
-**[Open Images v4](https://storage.googleapis.com/openimages/web/factsfigures_v4.html)**
-**[here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)**.
-Extract the pretrained TensorFlow model files. * Go to `models/research`
-directory and execute this code to get the frozen TensorFlow Lite graph.
-`python3 object_detection/export_tflite_ssd_graph.py \ --pipeline_config_path
-object_detection/samples/configs/ssd_mobilenet_v2_oid_v4.config \
---trained_checkpoint_prefix <directory with
-ssd_mobilenet_v2_oid_v4_2018_12_12>/model.ckpt \ --output_directory
-exported_model` * Convert the frozen graph to the TFLite model. `tflite_convert
-\ --input_shape=1,300,300,3 \ --input_arrays=normalized_input_image_tensor \
---output_arrays=TFLite_Detection_PostProcess,TFLite_Detection_PostProcess:1,TFLite_Detection_PostProcess:2,TFLite_Detection_PostProcess:3
-\ --allow_custom_ops \ --graph_def_file=exported_model/tflite_graph.pb \
---output_file=<directory with the TensorFlow examples
-repository>/lite/examples/object_detection/android/app/src/main/assets/detect.tflite`
-`input_shape=1,300,300,3` because the pretrained model works only with that
-input shape.
 
-`allow_custom_ops` is necessary to allow TFLite_Detection_PostProcess operation.
+## References
 
-`input_arrays` and `output_arrays` can be drawn from the visualized graph of the
-example detection model. `bazel run //tensorflow/lite/tools:visualize \
-"<directory with the TensorFlow examples
-repository>/lite/examples/object_detection/android/app/src/main/assets/detect.tflite"
-\ detect.html`
+ - [Dataset](https://cocodataset.org/#home)
+ - [Deep Learning on Android](https://www.tensorflow.org/lite/guide/android)
+ - [Object Detection Model](https://www.tensorflow.org/lite/examples/object_detection/overview)
 
-*   Get `labelmap.txt` from the second column of
-    **[class-descriptions-boxable](https://storage.googleapis.com/openimages/2018_04/class-descriptions-boxable.csv)**.
-*   In `DetectorActivity.java` set `TF_OD_API_IS_QUANTIZED` to `false`.
-
-### Additional Note
-
-_Please do not delete the assets folder content_. If you explicitly deleted the
-files, then please choose *Build*->*Rebuild* from menu to re-download the
-deleted model files into assets folder.
+  
