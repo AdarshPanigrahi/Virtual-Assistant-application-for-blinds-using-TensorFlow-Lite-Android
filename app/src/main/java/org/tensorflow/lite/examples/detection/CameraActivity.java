@@ -104,7 +104,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
   private static final String TF_OD_API_LABELS_FILE = "labelmap.txt";
   private static final DetectorMode MODE = DetectorMode.TF_OD_API;
 
-  // Minimum detection confidence to track a detection.
+
   private static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.5f;
   private static final Size DESIRED_ANALYSIS_SIZE = new Size(640, 480);
   private static final float TEXT_SIZE_DIP = 10;
