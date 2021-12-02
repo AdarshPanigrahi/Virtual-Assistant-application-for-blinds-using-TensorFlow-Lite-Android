@@ -398,6 +398,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
     }
   }
 
+
   private static boolean allPermissionsGranted(final int[] grantResults) {
     for (int result : grantResults) {
       if (result != PackageManager.PERMISSION_GRANTED) {
