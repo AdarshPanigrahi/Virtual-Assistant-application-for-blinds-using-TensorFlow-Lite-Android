@@ -384,6 +384,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
   }
 
 
+
   @Override
   public void onRequestPermissionsResult(
           final int requestCode, final String[] permissions, final int[] grantResults) {
